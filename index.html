@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Assignment</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./favicon.0f31d2ea.ico">
+</head>
+
+<body>
+    <header>
+         <input type="checkbox" id="menu">
+        <label for="menu" id="menu-btn">≡</label>
+        <div id="icon"><i class="fa-brands fa-spotify" style="color: #ffffff;"></i></div>
+          <div id="icon-name">Spotify</div>
+        <div id="home">
+            <div id="house"> <i class="fa-solid fa-house" style="color: #d1cece;"></i></div>
+
+
+            <div id="search">
+                <!-- <abbr title="search"><i class="fa-solid fa-magnifying-glass" style="color:  #f0f0f0;"></i></abbr> -->
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="search" placeholder="What do you want to play?">
+                <div id="browse"><i class="fa-solid fa-folder-plus"></i></div>
+            </div>
+        </div>
+
+        <div id="head-list">
+            <ul>
+                <li id="premium">Premium</li>
+                <li id="support">Support</li>
+                <li id="download">Download</li>
+                <!-- <li style="font-size: 27px;f; color:white;">|</li> -->
+                <li id="install"><i class="fa-regular fa-circle-down"></i>Install App
+                </li>
+                <li style="font-size: 14px;">Sign Up</li>
+                <li><button id="login">Log In</button></li>
+            </ul>
+        </div>
+
+    </header>
+
+    <!-- ASIDE-------------------------------------------------------------------------- -->
+
+    <aside>
+
+        <div id="library">
+            Your Library
+            <div id="plus"><i class="fa-solid fa-plus"></i></div>
+        </div>
+
+        <div id="aside-scroll">
+            <div class="aside-card">
+                <h3>Create your first playlist</h3>
+                <p>It's easy,we'll help you</p>
+                <button id="playlist">Create playlist</button>
+            </div>
+            <div class="aside-card">
+                <h3>Let's find some podcasts to follow </h3>
+                <p>We'll keep you updtaed on new episodes</p>
+                <button id="podcast">Browse podcasts</button>
+            </div>
+        </div>
+
+        <div id="aside-list">
+            <ul>
+                <li>Legal</li>
+                <li>Safety & Privacy Center </li>
+                <li>Privacy Policy</li>
+                <li>Cookies</li>
+                <li>About adds</li>
+                <li>Accessibility</li><br>
+                <li id="cookies"><a href="https://www.spotify.com/in-en/legal/cookies-policy/">Cookies</a></li>
+            </ul>
+
+            <button id="language">
+                <i class="fa-solid fa-globe" style="color: #ffffff;padding-right: 25px;font-size: 14px;"></i>
+                English
+            </button>
+        </div>
+    </aside>
+
+    <!-- MAIN------------------------------------------------------------------- -->
+
+    <main>
+        <!-- trending----------------------------------------------------------- -->
+
+        <div id="trending">
+            <div id="t-1">
+                <h1>Trending Songs</h1>
+                <button>Show all</button>
+            </div>
+
+            <div id="t-container">
+
+                <div id="t-slider">
+                    <div class="t-card">
+                        <img src="./thalapat.jpg" alt="">
+                        <div id="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="t-detail">
+                            <h3>Thalapathy Kacheri <br>(from "Jana...</h3>
+                            <p>Anirudh Ravichander, Thalapathy Vijay,Arivu</p>
+                        </div>
+                    </div>
+
+                    <div class="t-card">
+                        <img src="./chikiri.jpg" alt="">
+                        <div id="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="t-detail">
+                            <h3>Chikiri Chikiri (from "Peddi") [Telugu]</h3>
+                            <p>A.R.Rehman,Mohit Chauhan,Balaji</p>
+                        </div>
+                    </div>
+
+                    <div class="t-card">
+                        <img src="./haseen.jpg" alt="">
+                        <div id="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="t-detail">
+                            <h3>Haseen</h3>
+                            <p>Tailwiinder, NDS, <br>Rippy Grewal</p>
+                        </div>
+                    </div>
+
+                    <div class="t-card">
+                        <img src="./hanuman.jpg" alt="">
+                        <div id="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="t-detail">
+                            <h3>Shree Hanuman Chalisa</h3>
+                            <p>Hariharan</p>
+                        </div>
+                    </div>
+
+                    <div class="t-card">
+                        <img src="./midnight.jpg" alt="">
+                        <div id="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="t-detail">
+                            <h3>Midnight Call</h3>
+                            <p>Harkirat Singha, <br>Starboy X</p>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="t-card">
+                        <img src="./i am done.jpg" alt="">
+                        <div id="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="t-detail">
+                            <h3>I'm Done.-I-Popstar: Vol.1</h3>
+                            <p>Maan Panu</p>
+                        </div>
+                    </div>
+
+                    <div class="t-card">
+                        <img src="./globe.jpg" alt="">
+                        <div id="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="t-detail">
+                            <h3>GlobeTrotter (from "GlobeTrotter")</h3>
+                            <p>M.M.Keravaani,Shruti Hassan,kala Bhairava..</p>
+                        </div>
+                    </div>
+
+                    <div class="t-card">
+                        <img src="./apsara.jpg" alt="">
+                        <div id="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="t-detail">
+                            <h3>Apsraa 2</h3>
+                            <p>Jaani, Asees Kaur, <br>Bunny</p>
+                        </div>
+                    </div>
+
+                    <div class="t-card">
+                        <img src="./3shauk.jpg" alt="">
+                        <div id="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="t-detail">
+                            <h3>3 Shaukk (from "De De Pyaar De 2")</h3>
+                            <p>Avvy Sra, Karan Aujla, Jaani, Jyotica Tangri</p>
+                        </div>
+                    </div>
+
+
+                    <div class="t-card">
+                        <img src="./dooron.jpg" alt="">
+                        <div id="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="t-detail">
+                            <h3>Dooron Dooron</h3>
+                            <p>Paresh Pahuja, Shiv Tandan, Meghdeep...</p>
+                        </div>
+                    </div>
+
+
+
+                    <div class="t-card">
+                        <img src="./galsun.jpg" alt="">
+                        <div id="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="t-detail">
+                            <h3>Gal Sun</h3>
+                            <p>Sabat Batin,Rockstar</p>
+                        </div>
+                    </div>
+
+                    <div class="t-card">
+                        <img src="./ankhye.jpg" alt="">
+                        <div id="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="t-detail">
+                            <h3>Aakh ye taalibani</h3>
+                            <p>manish sonipat aala, bali sharma,vampire</p>
+                        </div>
+                    </div>
+
+                    <div class="t-card">
+                        <img src="./ishq.jpg" alt="">
+                        <div id="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="t-detail">
+                            <h3>ishq</h3>
+                            <p>faheem abdullah, rauhan malik, amir...</p>
+                        </div>
+                    </div>
+
+                    <div class="t-card">
+                        <img src="./dhundala.jpg" alt="">
+                        <div id="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="t-detail">
+                            <h3>dhundhala</h3>
+                            <p>yashraj, dropped out, talwinder</p>
+                        </div>
+                    </div>
+
+                    <div class="t-card">
+                        <img src="./raatbhar.jpg" alt="">
+                        <div id="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="t-detail">
+                            <h3>raatbahar (from"de de pyaar de 2")</h3>
+                            <p>aditya rikhari, payal dev, aditya dev,...</p>
+                        </div>
+                    </div>
+
+                    <div class="t-card">
+                        <img src="./chilgum.jpg" alt="">
+                        <div id="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="t-detail">
+                            <h3>chillgum</h3>
+                            <p>yo yo honey singh, ragini vishwakarma</p>
+                        </div>
+                    </div>
+
+                    <div class="t-card">
+                        <img src="./adi alaye.jpg" alt="">
+                        <div id="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="t-detail">
+                            <h3>adi alaye (from "parasakhthi")(tamil)</h3>
+                            <p>g.v.prakash ,sean roldan, dhee, ekadeesi</p>
+                        </div>
+                    </div>
+
+                    <div class="t-card">
+                        <img src=".//tereliye.jpg" alt="">
+                        <div id="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="t-detail">
+                            <h3>tere liye</h3>
+                            <p>atif aslam,shreya ghoshal</p>
+                        </div>
+                    </div>
+
+                    <div class="t-card">
+                        <img src="./andaz.jpg" alt="">
+                        <div id="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="t-detail">
+                            <h3>andaaz e karam</h3>
+                            <p>madhur sharma,moin, ER</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <!-- popular-------------------------------------------------------------------       -->
+        <div id="popular">
+            <div id="p-1">
+                <h1>Popular artist</h1>
+                <button>Show all</button>
+            </div>
+            <div id="p-container">
+                <div id="p-slider">
+                    <div class="p-card">
+                        <img src="./pritam.jpg" alt="">
+                        <div id="p-play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="p-detail">
+                            <h3>pritam</h3>
+                            <p>artist</p>
+                        </div>
+                    </div>
+                    <div class="p-card">
+                        <img src="./arrehman.jpg" alt="">
+                        <div id="p-play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="p-detail">
+                            <h3>a.r. rehman</h3>
+                            <p>artist</p>
+                        </div>
+                    </div>
+                    <div class="p-card">
+                        <img src="./arijit.jpg" alt="">
+                        <div id="p-play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="p-detail">
+                            <h3>arijit singh</h3>
+                            <p>artist</p>
+                        </div>
+                    </div>
+                    <div class="p-card">
+                        <img src="./sachinjigar.jpg" alt="">
+                        <div id="p-play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="p-detail">
+                            <h3>sachin-jigar</h3>
+                            <p>artist</p>
+                        </div>
+                    </div>
+                    <div class="p-card">
+                        <img src="./vishalshekhar.jpg" alt="">
+                        <div id="p-play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="t-detail">
+                            <h3>vishal-shekhar</h3>
+                            <p>artist</p>
+                        </div>
+                    </div>
+                    <div class="p-card">
+                        <img src="./atif.jpg" alt="">
+                        <div id="p-play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="p-detail">
+                            <h3>atif aslam</h3>
+                            <p>artist</p>
+                        </div>
+                    </div>
+                    <div class="p-card">
+                        <img src="./anirudh.jpg" alt="">
+                        <div id="p-play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="p-detail">
+                            <h3>anirudh ravichander</h3>
+                            <p>artist</p>
+                        </div>
+                    </div>
+                    <div class="p-card">
+                        <img src="./udit.jpg" alt="">
+                        <div id="p-play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="p-detail">
+                            <h3>udit narayan</h3>
+                            <p>artist</p>
+                        </div>
+                    </div>
+                    <div class="p-card">
+                        <img src="./yoyo.jpg" alt="">
+                        <div id="p-play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="p-detail">
+                            <h3>yo yo honey singh</h3>
+                            <p>artist</p>
+                        </div>
+                    </div>
+                    <div class="p-card">
+                        <img src="./shankarahsaanloy.jpg" alt="">
+                        <div id="p-play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="p-detail">
+                            <h3>shankar-ehsaan-loy</h3>
+                            <p>artist</p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+        <!-- albums--------------------------------------------------------------------------- -->
+        <div id="albums">
+            <div id="a-1">
+                <h1>Popular albums and singles</h1>
+                <button>Show all</button>
+            </div>
+
+            <div id="a-container">
+
+                <div id="a-slider">
+                    <div class="a-card">
+                        <img src="./aashiqui2.jpg" alt="">
+                        <div id="a-play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="a-detail">
+                            <h3>aashiqui2</h3>
+                            <p>mithoon, ankit tiwari, jeet gannguli</p>
+                        </div>
+                    </div>
+                    <div class="a-card">
+                        <img src="./yejawani.jpg" alt="">
+                        <div id="a-play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="a-detail">
+                            <h3>ye jawani ahi deewani</h3>
+                            <p>pritam</p>
+                        </div>
+                    </div>
+                    <div class="a-card">
+                        <img src="./sanam.jpg" alt="">
+                        <div id="a-play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="a-detail">
+                            <h3>sanam teri kasam (origin motion...</h3>
+                            <p>himesh reshammiya, sameer anjaan, subrat...</p>
+                        </div>
+                    </div>
+                    <div class="a-card">
+                        <img src="./finding.jpg" alt="">
+                        <div id="a-play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="a-detail">
+                            <h3>finding her</h3>
+                            <p>kushagra, bharath, saaheal</p>
+                        </div>
+                    </div>
+                    <div class="a-card">
+                        <img src="./younge.jpg" alt="">
+                        <div id="a-play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="a-detail">
+                            <h3>younge g.o.a.t</h3>
+                            <p>cheema y,gur sidhu</p>
+                        </div>
+                    </div>
+                    <div class="a-card">
+                        <img src="./ranjhan.jpg" alt="">
+                        <div id="a-play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="a-detail">
+                            <h3>raanjhan (from "do paati")</h3>
+                            <p>sachet-parampara, parampara tandon...</p>
+                        </div>
+                    </div>
+                    <div class="a-card">
+                        <img src="./ultimate.jpg" alt="">
+                        <div id="a-play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="a-detail">
+                            <h3>ultimate love songs -arijit singh</h3>
+                            <p>arijit singh</p>
+                        </div>
+                    </div>
+                    <div class="a-card">
+                        <img src="./making.jpg" alt="">
+                        <div id="a-play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="a-detail">
+                            <h3>making memories</h3>
+                            <p>karan aujla, ikky</p>
+                        </div>
+                    </div>
+                    <div class="a-card">
+                        <img src="./scicario.jpg" alt="">
+                        <div id="a-play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="a-detail">
+                            <h3>sicario</h3>
+                            <p>shubh</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- radio------------------------------------------------------------------------------- -->
+
+        <div id="radio">
+            <div id="r-1">
+                <h1>Popular Radio</h1>
+                <button>Show all</button>
+            </div>
+            <div id="r-container">
+                <div id="r-slider">
+                    <div class="r-card">
+                        <img src="./radio1.jpg" alt="">
+                        <div id="r-play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="r-detail">
+                            <p> with sachin-jigar, jeet gaanguli, atif..</p>
+                        </div>
+                    </div>
+                    <div class="r-card">
+                        <img src="./radio2.jpg" alt="">
+                        <div id="r-play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="r-detail">
+                            <p>with pritam, vishal- shekhar, shaarib tos...</p>
+                        </div>
+                    </div>
+                    <div class="r-card">
+                        <img src="./radio3.jpg" alt="">
+                        <div id="r-play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="r-detail">
+                            <p>with a.r.rehman, atif aslam ,arijit sing a...</p>
+                        </div>
+                    </div>
+                    <div class="r-card">
+                        <img src="./radio4.jpg" alt="">
+                        <div id="r-play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="r-detail">
+                            <p>with vinod rathod ,kumar sanu,udit...</p>
+                        </div>
+                    </div>
+                    <div class="r-card">
+                        <img src="./radio5.jpg" alt="">
+                        <div id="r-play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="r-detail">
+                            <p>with shubh, karan aujla, AP dhillon and...</p>
+                        </div>
+                    </div>
+                    <div class="r-card">
+                        <img src="./radio6.jpg" alt="">
+                        <div id="r-play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="r-detail">
+                            <p>with hariharan, unnikrishnan, anirudh...</p>
+                        </div>
+                    </div>
+                    <div class="r-card">
+                        <img src="./radio7.jpg" alt="">
+                        <div id="r-play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="r-detail">
+                            <p>with pritam, guru randhawa, harrdy...</p>
+                        </div>
+                    </div>
+                    <div class="r-card">
+                        <img src="./radio8.jpg" alt="">
+                        <div id="r-play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="r-detail">
+                            <p>with shubh, AP dhillon, sharry mann...</p>
+                        </div>
+                    </div>
+                    <div class="r-card">
+                        <img src="./radio9.jpg" alt="">
+                        <div id="r-play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="r-detail">
+                            <p>with mukesh ,tabassum, hemant...</p>
+                        </div>
+                    </div>
+                    <div class="r-card">
+                        <img src="./radio10.jpg" alt="">
+                        <div id="r-play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="r-detail">
+                            <p>with asha bhosle, vinod rathod, jatin-...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-- -features--------------------------------------------------------------------------- -->
+
+         <div id="features">
+            <div id="f-1">
+                <h1>Featured Charts</h1>
+                <button>Show all</button>
+            </div>
+            <div id="f-container">
+                <div id="f-slider">
+                    <div class="f-card">
+                        <img src="./feature1.jpg" alt="">
+                        <div id="f-play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="f-detail">
+                            <p>Your weekly update of the most played...</p>
+                        </div>
+                    </div>
+                    <div class="f-card">
+                        <img src="./feature2.jpg" alt="">
+                        <div id="f-play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="f-detail">
+                            <p>Your weekly update of the most played...</p>
+                        </div>
+                    </div>
+                    <div class="f-card">
+                        <img src="./feature3.jpg" alt="">
+                        <div id="f-play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="f-detail">
+                            <p>Your daily update of the most played...</p>
+                        </div>
+                    </div>
+                    <div class="f-card">
+                        <img src="./feature4.jpg" alt="">
+                        <div id="f-play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="f-detail">
+                            <p>Your daily update of the most played...</p>
+                        </div>
+                    </div>
+                    <div class="f-card">
+                        <img src="./feature5.jpg" alt="">
+                        <div id="f-play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="f-detail">
+                            <p>Your daily update of the most played...</p>
+                        </div>
+                    </div>
+                    <div class="f-card">
+                        <img src="./feature6.jpg" alt="">
+                        <div id="f-play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="f-detail">
+                            <p>Your daily update of the most played...</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+<!-- footer----------------------------------------------------------------------------------- -->
+
+<footer>
+    
+      <div id="footer-container">
+        <ul id="company">
+            <li class="bold">Company</li>
+            <li>About</li>
+            <li>Jobs</li>
+            <li>for the Record</li>
+        </ul>
+        <ul id="communities">
+            <li class="bold">Communities</li>
+            <li>for Artists</li>
+            <li>Developers</li>
+            <li>Advertising</li>
+            <li>Investors</li>
+            <li>Vendors</li>
+        </ul>
+         <ul id="usefull">
+            <li class="bold">Usefull Links</li>
+            <li>Support</li>
+            <li>Free Mobile App</li>
+            <li>Popular by Country</li>
+            <li>Import your music</li>
+        </ul>
+         <ul id="spotify">
+            <li class="bold">Spotify Plans</li>
+            <li>Premium Lite</li>
+            <li>Premium Individual</li>
+            <li>Premium Platinum</li>
+            <li>Premium Student</li>
+            <li>Spotify Free</li>
+        </ul>
+
+        <div id="icons">
+            <div class="app"><a href="https://www.instagram.com/spotify/"><i class="fa-brands fa-instagram"></i></a></div>
+            <div class="app"><a href="https://x.com/spotify"><i class="fa-brands fa-twitter"></i></i></a></div>
+            <div class="app"><a href="https://www.facebook.com/Spotify"><i class="fa-brands fa-facebook"></i></a></div>
+        </div>
+
+      </div>
+      <p>© 2025 Spotify AB</p>
+</footer>
+
+    </main>
+
+    <!-- END--------------------------------------------------------------------------- -->\
+
+    <div id="end">
+        <h5>Preview of Spotify</h5>
+        <p>Sign up to get unlimited songs and podcasts with occasional adds.No credit card needed. </p>
+        <button>Sign up for free</button>
+    </div>
+
+
+    <script src="https://kit.fontawesome.com/7f7615103f.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
