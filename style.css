@@ -1300,9 +1300,6 @@ header{
     left: 40px;
     top: 3px;
 }
-/* #search [placeholder]{
-    display: none;
-} */
 #search input:focus{
     outline: none;
 }
@@ -1327,7 +1324,6 @@ header{
     display: none;
 }
 #head-list ul{
-    /* display: none; */
     height: 87%;
     width: 100%;
     /* border: 1px solid red; */
@@ -1339,8 +1335,6 @@ header{
     /* z-index: 1200; */
 }
 #head-list ul li{
-    /* display: none; */
-
     width: 100px;
     color: #111111;
     /* border: 1px solid white; */
@@ -1348,8 +1342,6 @@ header{
     font-size:15px ;
     cursor: pointer;
     transition: scale 11s ease-in;
-    /* z-index: 1500; */
-
 }
 #premium{
       margin-right: 0px;
@@ -1381,16 +1373,10 @@ header{
       color: white;
       font-size: 50px;
       cursor: pointer;
-    }
-    #menu:checked ~ #head-list{
+}
+#menu:checked ~ #head-list{
       display: block;
-    } 
-     /* #menu:checked ~ #head-list ul{
-      display: block;
-    }  */
-/* #login{
-    display: none;
-} */
+} 
 
 /* ASIDE---------------------------------------------------------------- */
 
@@ -1410,13 +1396,12 @@ main{
     margin: 5px;
     overflow: hidden;
     overflow-y: auto;
-    
 }
 
 /* trending----------------------------------------------------------------------------- */
 
 #trending{
-    height: 190px ;
+    height: 195px ;
     width: 100%;
     /* border: 3px solid white; */
 }
@@ -1514,7 +1499,7 @@ main{
     margin-right: 20px;
 }
 #p-container{
-    height: 70%;
+    height: 75%;
     width: 100%;
     /* border: 1px solid red; */
 }
@@ -1630,6 +1615,7 @@ main{
     font-size: 10px;
 }
 .a-detail p{
+    display: none;
     font-size: 9px;
     line-height: 10px;
 }
