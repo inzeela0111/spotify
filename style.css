@@ -1320,9 +1320,6 @@ header{
     right: 0px;
     z-index: 1000;
 }
-#menu:checked ~ #head-list{
-    display: none;
-}
 #head-list ul{
     height: 87%;
     width: 100%;
